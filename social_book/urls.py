@@ -24,5 +24,5 @@ urlpatterns = [
     path('', include('core.urls', namespace='index'))
 ]
 
-urlpatterns = urlpatterns + static(settings.MEDIA_URL,
-                                   document_roots=settings.MEDIA_ROOT)
+urlpatterns = urlpatterns+static(settings.MEDIA_URL,
+document_root=settings.MEDIA_ROOT)
